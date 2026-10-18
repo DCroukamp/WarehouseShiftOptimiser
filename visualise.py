@@ -37,6 +37,12 @@ def plot_staffing_coverage(results):
         ha="right",
     )
 
+    fig.savefig(
+        "images/staffing_coverage.png",
+        dpi=300,
+        bbox_inches="tight"
+    )
+
     plt.show()
 
 
@@ -65,6 +71,12 @@ def plot_overstaffing(results):
         results["time"].iloc[ticks],
         rotation=45,
         ha="right",
+    )
+
+    fig.savefig(
+        "images/shift_overstaffing.png",
+        dpi=300,
+        bbox_inches="tight"
     )
 
     plt.show()
